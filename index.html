@@ -21,19 +21,26 @@
                 <p>Elija la figura geométrica:</p>
                 <div class="col-6 pt-3 pb-3">
                     <select class="col-12 form-select" aria-label="Default select example">
-                        <option selected id="triangulo" value="triangulo">Triángulo</option>
-                        <option id="rectangulo" value="rectangulo">Rectángulo</option>
+                        <option selected id="triangulo" value="triangulo">Triángulo equilátero</option>
+                        <option id="rectangulo" value="circulo">Círculo</option>
                         <option id="cuadrado" value="cuadrado">Cuadrado</option>
+                    </select>
+                </div>
+                <p>Elija el dato que necesita (área/perímetro):</p>
+                <div class="col-6 pt-3 pb-3">
+                    <select class="col-12 form-select" aria-label="Default select example">
+                        <option selected id="area" value="area">área</option>
+                        <option id="rectangulo" value="perimetro">perímetro</option>
                     </select>
                 </div>
                 <div class="row justify-content-center">
                     
                     <div class="col-12 d-flex justify-content-center">
-                        <input class="" type="number" id="a" placeholder="Ingrese a" required>
+                        <input class="" type="number" id="a" placeholder="lado o radio" required>
                     </div>
-                    <div class="col-12 d-flex justify-content-center">
+                    <!-- <div class="col-12 d-flex justify-content-center">
                         <input class="" type="number" id="b" placeholder="Ingrese b" required>
-                    </div>
+                    </div> -->
                     <div class="col-12 pt-3 d-flex justify-content-center">
                         
                         <button class="calcular" id="magic" onclick="muestraLaMagia()"> Calcular <i class="fa fa-check"></i></button>                        
