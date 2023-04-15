@@ -1,0 +1,43 @@
+.logo-img {
+    width: 80px;
+}
+
+nav {
+    
+    background: url(../img/fondo.jpg) repeat-x;
+    background-size: contain;
+    color: gray;
+}
+
+.navbar-bar {
+    justify-content: center;
+}
+
+h2 {
+    text-decoration: overline;
+    
+}
+
+.timg {
+    width: 100%;
+    height: 185px;
+}
+
+#medium {
+    columns: 40;
+    grid-row: 5;
+}
+
+.carousel-img {
+    height: 400px;
+}
+
+.footer {
+    background-image: url(../img/fondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding-top: 125px;
+}

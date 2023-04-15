@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <title>Formulario</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <form action="recibido.html" method="post" target="_blank" class="align-items-center" id="formulario">
+            <div class="row">
+                <div class="form-group col-xs-4 col-sm-4 fs-6 mt-3">
+                    <label for="nombre" class="col-xs-12 col-sm-12 col-form-label">Nombre</label>
+                    <input type="text" class="form-control col-xs-12 col-sm-12" id="nombre" name="nombre" placeholder="Marcos" required>
+                </div>
+
+                <div class="form-group col-xs-4 col-sm-4 fs-6 mt-3">
+                    <label for="apellido" class="col-xs-12 col-sm-12 col-form-label">Apellido</label>
+                    <input type="text" class="form-control col-xs-12 col-sm-12" id="apellido" name="apellido" placeholder="Ortega" required>
+                </div>
+
+                <div class="form-group col-xs-4 col-sm-4 fs-6 mt-3">
+                    <label for="username" class="col-xs-12 col-sm-12 col-form-label">Nombre de usuario</label>
+                    <div class="input-group col-xs-12 col-sm-12">
+                        <div class="input-group-text">@</div>
+                        <input type="text" class="form-control" id="username" name="username" placeholder="MarO" required>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="form-group col-xs-8 col-sm-8 fs-6 mt-3">
+                    <label for="ciudad" class="col-xs-12 col-sm-12 col-form-label">Ciudad</label>
+                    <input type="text" class="form-control col-xs-12 col-sm-12" id="ciudad" name="ciudad" placeholder="New York" required> </div>
+                <div class="form-group col-xs-4 col-sm-4 fs-6 mt-3">
+                    <label for="motivo" class="col-xs-12 col-sm-4 col-form-label">Motivo</label>
+                    <select name="motivo" id="motivo" class="form-select" required>
+                        <option value="1">Deposito</option>
+                        <option value="2">Giro</option>
+                        <option value="3">Consulta de saldo</option>
+                    </select>
+                </div>
+                <div class="form-group col-xs-12 col-sm-12 fs-6 mt-3">
+                    <label for="checkbox" class="col-xs-12 col-sm-12 col-form-label">¿Desea ver la respuesta en pantalla?</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="checkbox" name="checkbox" required>
+                        <label class="form-check-label">Si</label>
+                    </div>
+                </div>
+                <div class="col-12 mt-3">
+                    <button type="submit" class="btn btn-primary">Solicitar</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
